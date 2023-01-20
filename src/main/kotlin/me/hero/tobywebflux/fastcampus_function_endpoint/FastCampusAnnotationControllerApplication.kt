@@ -6,11 +6,11 @@ import org.springframework.boot.web.embedded.netty.NettyReactiveWebServerFactory
 import org.springframework.context.annotation.Bean
 
 @SpringBootApplication
-class FastCampusWebFluxApplication {
+class FastCampusAnnotationControllerApplication {
     @Bean
     fun nettyReactiveWebServerFactory(): NettyReactiveWebServerFactory = NettyReactiveWebServerFactory()
 }
 
 fun main(args: Array<String>) {
-    runApplication<FastCampusWebFluxApplication>(*args)
+    runApplication<FastCampusAnnotationControllerApplication>(*args)
 }

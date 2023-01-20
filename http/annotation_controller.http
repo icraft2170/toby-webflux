@@ -1,0 +1,18 @@
+
+### Book 추가
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "name" : "GoF의 디자인패턴",
+  "price" : 20000
+}
+
+### Book 조회
+GET http://localhost:8080/books
+
+### Book 단건 조회
+GET http://localhost:8080/books/1
+
+### Book 단건 삭제
+DELETE http://localhost:8080/books/1
