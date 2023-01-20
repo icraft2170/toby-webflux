@@ -1,0 +1,11 @@
+### Book 추가
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "name" : "디자인패턴",
+  "price" : 20000
+}
+
+### Book 단건 조회
+GET http://localhost:8080/books/디자인패턴

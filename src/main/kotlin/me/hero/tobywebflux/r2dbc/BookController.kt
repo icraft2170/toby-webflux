@@ -1,0 +1,31 @@
+package me.hero.tobywebflux.r2dbc
+
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.RequestBody
+import org.springframework.web.bind.annotation.RestController
+import reactor.core.publisher.Mono
+
+
+@RestController
+class BookController(
+    val bookRepository: BookRepository,
+) {
+
+    @GetMapping("/books/{name}")
+    fun getByName(
+        @PathVariable name: String,
+    ): Mono<Book> = bookRepository.findByName(name)
+
+    @PostMapping("/books")
+    fun create(
+        @RequestBody map: Map<String, Any>,
+    ): Mono<Book> {
+        val book = Book(
+            name = map["name"].toString(),
+            price = map["price"] as Int,
+        )
+        return bookRepository.save(book)
+    }
+}

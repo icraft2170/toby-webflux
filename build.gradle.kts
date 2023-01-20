@@ -24,6 +24,9 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-tomcat:3.0.1")
     implementation("org.springframework.boot:spring-boot-starter-reactor-netty:3.0.1")
 
+    implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
+
+
     implementation("io.github.microutils:kotlin-logging:1.12.5")
 
 
@@ -33,6 +36,8 @@ dependencies {
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
+
+    runtimeOnly("io.r2dbc:r2dbc-h2")
 }
 
 tasks.withType<KotlinCompile> {
