@@ -1,6 +1,6 @@
-package me.hero.tobywebflux.fastcampus_annotation_controller
+package me.hero.tobywebflux.annotation_controller
 
-import me.hero.tobywebflux.fastcampus_annotation_controller.book.Book
+import me.hero.tobywebflux.annotation_controller.book.Book
 import org.slf4j.LoggerFactory
 import org.springframework.core.ParameterizedTypeReference
 import org.springframework.http.HttpMethod

@@ -1,4 +1,4 @@
-package me.hero.tobywebflux.fastcampus_annotation_controller.book
+package me.hero.tobywebflux.annotation_controller.book
 
 import org.springframework.web.bind.annotation.*
 import reactor.core.publisher.Flux

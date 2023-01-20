@@ -1,4 +1,4 @@
-package me.hero.tobywebflux.fastcampus_function_endpoint
+package me.hero.tobywebflux.function_endpoint
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
