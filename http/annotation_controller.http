@@ -16,3 +16,10 @@ GET http://localhost:8080/books/1
 
 ### Book 단건 삭제
 DELETE http://localhost:8080/books/1
+
+
+### RestTempalte을 활용한 웹 요청
+GET http://localhost:8080/books/block
+
+### WebClient 를 활용한 웹 요청
+GET http://localhost:8080/books/nonblock
